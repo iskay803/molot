@@ -1,0 +1,702 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>index</title>
+    <link rel="stylesheet" href="plugin/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="font/stylesheet.css" />
+    <link href="plugin/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <script src="plugin/swiper/swiper-bundle.min.js"></script>
+    <script src="plugin/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="plugin/jquery-3.6.1.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+<header>
+<section>
+    <div class="container">
+        <div class="header-top d-none d-lg-flex">
+            <div class="contact-us">
+                <a href="#" class="whatsapp-us">Напишите нам</a>
+                <a href="#" class="instagram-us"></a>
+            </div>
+            <div class="header-menu">
+                <a href="#" class="sell-link">Разместить свои товары</a>
+                <a href="#" class="menu-link">Доставка</a>
+                <a href="#" class="menu-link">Оплата</a>
+                <a href="#" class="menu-link">О нас</a>
+                <a href="#" class="basket-link">
+                    <span class="counter">25</span>
+                </a>
+            </div>
+        </div>
+        <div class="header-mid d-none d-lg-flex ">
+            <div class="logo-img">
+                <img src="icons/logo.png" class="img-fluid">
+            </div>
+            <div class="user-block">
+                <div class="user-item loc">Склад: Казахстан</div>
+                <div class="user-item account" data-bs-toggle="modal" data-bs-target="#loginModal">Личный кабинет</div>
+                <div class="number-item">
+                    <a href="#" class="tel">+7 701 0 320 320</a>
+                    <a href="#" class="link">Заказать звонок</a>
+                </div>
+            </div>
+        </div>
+        <div class="header-under d-none d-lg-flex ">
+            <div class="search-block">
+                <form>
+                    <span class="search-icon"></span>
+                    <input type="text" placeholder="Что вы хотите найти?" class="search-area">
+                    <button class="search-btn">Найти</button>
+                </form>
+            </div>
+            <div class="menu-more catalog">
+                Каталог товаров
+            </div>
+            <div class="menu-more range">
+                Область применения <span>(1632)</span>
+            </div>
+        </div>
+        <div class="header-mobile d-lg-none">
+            <div class="header-mobile-top">
+                <div class="user-item loc">Склад: Казахстан</div>
+                <div class="d-flex align-items-center">
+                    <div class="mobile-search"></div>
+                    <div class="mobile-burger"></div>
+                </div>
+            </div>
+            <div class="d-block d-md-flex align-items-center justify-content-between">
+                <div class="d-flex justify-content-between justify-content-sm-start my-3">
+                    <div class="menu-more catalog">
+                        Каталог
+                    </div>
+                    <div class="menu-more range">
+                        Применение
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between justify-content-sm-start">
+                    <div class="number-item">
+                        <a href="#" class="tel">+7 701 0 320 320</a>
+                        <a href="#" class="link">Заказать звонок</a>
+                    </div>
+                    <a href="#" class="basket-link">
+                        <span class="counter">25</span>
+                    </a>
+                </div>
+            </div>
+            <div class="d-flex flex-column flex-sm-row align-items-center justify-content-center justify-content-sm-between">
+                <div class="logo-img my-3">
+                    <img src="icons/logo.png" class="img-fluid">
+                </div>
+                <div class="">
+                    <a href="#" class="sell-link">Разместить свои товары</a>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-menu">
+            <div class="mobile-menu__header">
+                <div class="close-btn">
+                    <img src="icons/close.png" class="img-fluid">
+                </div>
+            </div>
+            <div class="user-item account" data-bs-toggle="modal" data-bs-target="#loginModal">Личный кабинет</div>
+            <div class="contact-us">
+                <a href="#" class="whatsapp-us">Напишите нам</a>
+                <a href="#" class="instagram-us inherit"></a>
+            </div>
+            <div class="mobile-menu__nav">
+                <a href="#" class="menu-link">Доставка</a>
+                <a href="#" class="menu-link">Оплата</a>
+                <a href="#" class="menu-link">О нас</a>
+            </div>
+        </div>
+    </div>
+</section>
+</header>
+<main>
+    <section>
+        <div class="container">
+            <div class="catalog-top">
+                <h2 class="title-2">Каталог товаров</h2>
+                <div class="sort-block">
+                    <div class="d-flex">
+                        <div class="me-2">Сортировать: </div>
+                        <select class="form-select" aria-label="selectPrice">
+                            <option selected> Цена (по возрастанию)</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="d-flex">
+                        <div class="me-2">Показать: </div>
+                        <select class="form-select" aria-label="selectShow">
+                            <option selected>1 265</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="catalog-main">
+                <div class="catalog-wrapper">
+                    <div class="product-card">
+                        <div class="d-flex d-md-block">
+                            <div class="product-img">
+                                <img src="img/img-1.png">
+                            </div>
+                            <div class="product-card__name">
+                                <a href="#" class="product-title">
+                                    Профиль алюминиевый
+                                    Уголок полочный
+                                    ТАТПРОФ
+                                </a>
+                                <div class="d-flex justify-content-between align-items-center my-2">
+                                    <div class="product-article">Артикул: <span> 210000000006</span></div>
+                                    <div class="product-lot">189</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-property">
+                            <table>
+                                <tr class="property-item">
+                                    <td class="major">Дерево:</td>
+                                    <td>Ива</td>
+                                </tr>
+                                <tr class="property-item">
+                                    <td class="major">Цвет:</td>
+                                    <td>Зеленый</td>
+                                </tr>
+                                <tr class="property-item">
+                                    <td class="major">Высота:</td>
+                                    <td>3,5 м</td>
+                                </tr>
+                                <tr class="property-item">
+                                    <td class="major">Мощность:</td>
+                                    <td>170 W</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="product-value">
+                            <div class="product-price">16 270.0₸</div>
+                            <div class="stepper">
+                                <button class="stepper__plus">+</button>
+                                <input type="text" value="122">
+                                <button class="stepper__minus">-</button>
+                            </div>
+                        </div>
+                        <div class="product-buy">
+                            <button class="btn btn-primary btn-buy">Добавить в корзину</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="d-flex d-md-block">
+                            <div class="product-img">
+                                <img src="img/img-2.png">
+                            </div>
+                            <div class="product-card__name">
+                                <a href="#" class="product-title">
+                                    Дерево
+                                    светодиодное
+                                </a>
+                                <div class="d-flex justify-content-between align-items-center my-2">
+                                    <div class="product-article">Артикул: <span> 210000000006</span></div>
+                                    <div class="product-lot">189</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-property">
+                            <table>
+                                <tr class="property-item">
+                                    <td class="major">Дерево:</td>
+                                    <td>Ива</td>
+                                </tr>
+                                <tr class="property-item">
+                                    <td class="major">Цвет:</td>
+                                    <td>Зеленый</td>
+                                </tr>
+                                <tr class="property-item">
+                                    <td class="major">Высота:</td>
+                                    <td>3,5 м</td>
+                                </tr>
+                                <tr class="property-item">
+                                    <td class="major">Мощность:</td>
+                                    <td>170 W</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="product-value">
+                            <div class="product-price">16 270.0₸</div>
+                            <div class="stepper">
+                                <button class="stepper__plus">+</button>
+                                <input type="text" value="122">
+                                <button class="stepper__minus">-</button>
+                            </div>
+                        </div>
+                        <div class="product-buy">
+                            <button class="btn btn-primary btn-buy">Добавить в корзину</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="d-flex d-md-block">
+                            <div class="product-img">
+                                <img src="img/img-3.png">
+                            </div>
+                            <div class="product-card__name">
+                                <a href="#" class="product-title">
+                                    Дерево
+                                    светодиодное
+                                </a>
+                                <div class="d-flex justify-content-between align-items-center my-2">
+                                    <div class="product-article">Артикул: <span> 210000000006</span></div>
+                                    <div class="product-lot">189</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-property">
+                            <table>
+                                <tr class="property-item">
+                                    <td class="major">Дерево:</td>
+                                    <td>Ива</td>
+                                </tr>
+                                <tr class="property-item">
+                                    <td class="major">Цвет:</td>
+                                    <td>Зеленый</td>
+                                </tr>
+                                <tr class="property-item">
+                                    <td class="major">Высота:</td>
+                                    <td>3,5 м</td>
+                                </tr>
+                                <tr class="property-item">
+                                    <td class="major">Мощность:</td>
+                                    <td>170 W</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="product-value">
+                            <div class="product-price">16 270.0₸</div>
+                            <div class="stepper">
+                                <button class="stepper__plus">+</button>
+                                <input type="text" value="122">
+                                <button class="stepper__minus">-</button>
+                            </div>
+                        </div>
+                        <div class="product-buy">
+                            <button class="btn btn-primary btn-buy">Добавить в корзину</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="d-flex d-md-block">
+                            <div class="product-img">
+                                <img src="img/img-1.png">
+                            </div>
+                            <div class="product-card__name">
+                                <a href="#" class="product-title">
+                                    Профиль алюминиевый
+                                    Уголок полочный
+                                    ТАТПРОФ
+                                </a>
+                                <div class="d-flex justify-content-between align-items-center my-2">
+                                    <div class="product-article">Артикул: <span> 210000000006</span></div>
+                                    <div class="product-lot">189</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-property">
+                            <table>
+                                <tr class="property-item">
+                                    <td class="major">Дерево:</td>
+                                    <td>Ива</td>
+                                </tr>
+                                <tr class="property-item">
+                                    <td class="major">Цвет:</td>
+                                    <td>Зеленый</td>
+                                </tr>
+                                <tr class="property-item">
+                                    <td class="major">Высота:</td>
+                                    <td>3,5 м</td>
+                                </tr>
+                                <tr class="property-item">
+                                    <td class="major">Мощность:</td>
+                                    <td>170 W</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="product-value">
+                            <div class="product-price">16 270.0₸</div>
+                            <div class="stepper">
+                                <button class="stepper__plus">+</button>
+                                <input type="text" value="122">
+                                <button class="stepper__minus">-</button>
+                            </div>
+                        </div>
+                        <div class="product-buy">
+                            <button class="btn btn-primary btn-buy">Добавить в корзину</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="d-flex d-md-block">
+                            <div class="product-img">
+                                <img src="img/img-2.png">
+                            </div>
+                            <div class="product-card__name">
+                                <a href="#" class="product-title">
+                                    Дерево
+                                    светодиодное
+                                </a>
+                                <div class="d-flex justify-content-between align-items-center my-2">
+                                    <div class="product-article">Артикул: <span> 210000000006</span></div>
+                                    <div class="product-lot">189</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-property">
+                            <table>
+                                <tr class="property-item">
+                                    <td class="major">Дерево:</td>
+                                    <td>Ива</td>
+                                </tr>
+                                <tr class="property-item">
+                                    <td class="major">Цвет:</td>
+                                    <td>Зеленый</td>
+                                </tr>
+                                <tr class="property-item">
+                                    <td class="major">Высота:</td>
+                                    <td>3,5 м</td>
+                                </tr>
+                                <tr class="property-item">
+                                    <td class="major">Мощность:</td>
+                                    <td>170 W</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="product-value">
+                            <div class="product-price">16 270.0₸</div>
+                            <div class="stepper">
+                                <button class="stepper__plus">+</button>
+                                <input type="text" value="122">
+                                <button class="stepper__minus">-</button>
+                            </div>
+                        </div>
+                        <div class="product-buy">
+                            <button class="btn btn-primary btn-buy">Добавить в корзину</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="d-flex d-md-block">
+                            <div class="product-img">
+                                <img src="img/img-3.png">
+                            </div>
+                            <div class="product-card__name">
+                                <a href="#" class="product-title">
+                                    Дерево
+                                    светодиодное
+                                </a>
+                                <div class="d-flex justify-content-between align-items-center my-2">
+                                    <div class="product-article">Артикул: <span> 210000000006</span></div>
+                                    <div class="product-lot">189</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-property">
+                            <table>
+                                <tr class="property-item">
+                                    <td class="major">Дерево:</td>
+                                    <td>Ива</td>
+                                </tr>
+                                <tr class="property-item">
+                                    <td class="major">Цвет:</td>
+                                    <td>Зеленый</td>
+                                </tr>
+                                <tr class="property-item">
+                                    <td class="major">Высота:</td>
+                                    <td>3,5 м</td>
+                                </tr>
+                                <tr class="property-item">
+                                    <td class="major">Мощность:</td>
+                                    <td>170 W</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="product-value">
+                            <div class="product-price">16 270.0₸</div>
+                            <div class="stepper">
+                                <button class="stepper__plus">+</button>
+                                <input type="text" value="122">
+                                <button class="stepper__minus">-</button>
+                            </div>
+                        </div>
+                        <div class="product-buy">
+                            <button class="btn btn-primary btn-buy">Добавить в корзину</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog-filter">
+                    <div class="filter-item">
+                        <div class="filter-title" data-bs-toggle="collapse" data-bs-target="#collapseFilter1"
+                             role="button" aria-expanded="false" aria-controls="collapseFilter1">
+                            Вид профиля
+                        </div>
+                        <div class="filter-list collapse multi-collapse show" id="collapseFilter1">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="profile-1">
+                                <label class="form-check-label" for="profile-1">
+                                    Профиль "Тавр" <span class="thing-lot">(3)</span>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="profile-2">
+                                <label class="form-check-label" for="profile-2">
+                                    Профиль "Стеновой" <span class="thing-lot">(1)</span>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="profile-3">
+                                <label class="form-check-label" for="profile-3">
+                                    Профиль "Шина" <span class="thing-lot">(5)</span>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="profile-4">
+                                <label class="form-check-label" for="profile-4">
+                                    Профиль "Швеллер" <span class="thing-lot">(5)</span>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="corner-1">
+                                <label class="form-check-label" for="corner-1">
+                                    Уголок неравнополочный <span class="thing-lot">(3)</span>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="corner-2">
+                                <label class="form-check-label" for="corner-2">
+                                    Уголок равнополочный <span class="thing-lot">(13)</span>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="pipe-1">
+                                <label class="form-check-label" for="pipe-1">
+                                    Труба квадратная <span class="thing-lot">(6)</span>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="pipe-2">
+                                <label class="form-check-label" for="pipe-2">
+                                    Труба круглая <span class="thing-lot">(5)</span>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="pipe-3">
+                                <label class="form-check-label" for="pipe-3">
+                                    Труба прямоугольная <span class="thing-lot">(7)</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter-item">
+                        <div class="filter-title" data-bs-toggle="collapse" data-bs-target="#collapseFilter2"
+                             role="button" aria-expanded="false" aria-controls="collapseFilter2">
+                            Толщина профиля
+                        </div>
+                        <div class="filter-list collapse multi-collapse show" id="collapseFilter2">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="wid-1">
+                                <label class="form-check-label" for="wid-1">
+                                    0,7 мм <span class="thing-lot">(3)</span>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="wid-2">
+                                <label class="form-check-label" for="wid-2">
+                                    0,8мм <span class="thing-lot">(1)</span>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="wid-3">
+                                <label class="form-check-label" for="wid-3">
+                                    1мм <span class="thing-lot">(5)</span>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="wid-4">
+                                <label class="form-check-label" for="wid-4">
+                                    1,2мм <span class="thing-lot">(5)</span>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="wid-5">
+                                <label class="form-check-label" for="wid-5">
+                                    1,25мм <span class="thing-lot">(3)</span>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="wid-6">
+                                <label class="form-check-label" for="wid-6">
+                                    1,3мм <span class="thing-lot">(13)</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="btn btn-secondary btn-main">Применить фильтр</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="pagination-block">
+                <nav aria-label="Page navigation">
+                    <ul class="pagination">
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        <li class="page-item"><a class="page-link number" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link number" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link number" href="#">3</a></li>
+                        <li class="page-item active"><a class="page-link number" href="#">4</a></li>
+                        <li class="page-item"><a class="page-link" href="#">5</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="page-show">
+                    Показано с <span>1</span> по <span>15</span> из <span>51</span> (всего <span>4</span> страниц)
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="promo-block">
+                <div class="promo-img">
+                    <img src="img/promo.png" class="img-fluid">
+                </div>
+                <div class="promo-text">
+                    <div class="promo-title">
+                        Только сегодня мы<br>
+                        продаем все с скидкой
+                    </div>
+                    <div class="mt-lg-4 d-lg-flex text-center text-md-start">
+                        <input type="text" class="promo-line ms-lg-4 mb-5 mb-lg-0 order-lg-1">
+                        <a href="#" class="btn btn-secondary btn-outline order-lg-0">Хочу узнать подробнее</a>
+                    </div>
+                </div>
+                <div class="discount">
+                    -25%
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="description mb-5">
+                Компания "SignImpress" осуществляет свою деятельность с 2006 года и является надежным и
+                постоянным поставщиком на рынке наружной рекламы, мы сотрудничаем с крупнейшими
+                заводами-производителями. Компания "SignImpress" осуществляет свою деятельность с 2006
+                года и является надежным и постоянным поставщиком на рынке наружной рекламы, мы сотрудничаем
+                с крупнейшими заводами-производителями.
+            </div>
+        </div>
+    </section>
+</main>
+<footer>
+    <section>
+        <div class="container">
+            <div class="d-md-flex justify-content-between">
+                <div class="order-md-1">
+                    <div class="number-item white">
+                        <a href="#" class="tel">+7 701 0 320 320</a>
+                        <a href="#" class="link">Заказать звонок</a>
+                    </div>
+                    <div class="contact-us justify-content-md-end mt-3 mt-md-4">
+                        <a href="#" class="whatsapp-us">Напишите нам</a>
+                        <a href="#" class="instagram-us inherit"></a>
+                    </div>
+                </div>
+                <div class="order-md-0 mt-5 mt-md-0">
+                    <div class="logo-img">
+                        <img src="icons/logo-footer.png" class="img-fluid">
+                    </div>
+                    <div class="mt-4 mb-2">© Вmolotok.kz, 2003 — 2021, Все права защищены</div>
+                    <a href="#" class="link">Пользовательское соглашение</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</footer>
+<div class="modal fade modal-auth login" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title" id="loginModalLabel">Авторизация</div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form class="auth-form">
+                    <div class="modal-par">
+                        <input type="text" class="form-control mt-0" id="authFormLogin" placeholder="Ваш Логин">
+                        <input type="text" class="form-control" id="authFormPassword" placeholder="Ваш Пароль">
+                        <a href="#" class="btn btn-secondary btn-main">Авторизоваться</a>
+                        <div class="auth-option">
+                            <a href="#" class="link">Забыли пароль?</a>
+                            <a href="#" class="link" data-bs-toggle="modal" data-bs-target="#registerModal">Регистрация</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade modal-auth register" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title" id="registerModalLabel">Регистрация</div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form class="auth-form">
+                    <div class="modal-par">
+                        <input type="text" class="form-control mt-0" placeholder="Логин">
+                        <input type="text" class="form-control" placeholder="Email">
+                    </div>
+                    <div class="modal-par">
+                        <input type="text" class="form-control mt-0"  placeholder="Пароль">
+                        <input type="text" class="form-control" placeholder="Поддтвердите пароль">
+                    </div>
+                    <div class="modal-par">
+                        <input type="text" class="form-control mt-0" placeholder="Страна">
+                        <input type="text" class="form-control" placeholder="Область">
+                        <input type="text" class="form-control" placeholder="Город">
+                    </div>
+                    <div class="form-check mb-4">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label mt-1" for="flexCheckDefault">
+                            Даю согласие на <a href="#" class="link">обработку персональных данных</a>
+                        </label>
+                    </div>
+                    <div class="auth-option">
+                        <a href="#" class="btn btn-light btn-back">Отмена</a>
+                        <a href="#" class="btn btn-secondary btn-main">Регистрация</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="overlay"></div>
+</body>
+</html>
