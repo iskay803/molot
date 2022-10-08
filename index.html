@@ -15,106 +15,389 @@
 </head>
 <body>
 <header>
-<section>
-    <div class="container">
-        <div class="header-top d-none d-lg-flex">
-            <div class="contact-us">
-                <a href="#" class="whatsapp-us">Напишите нам</a>
-                <a href="#" class="instagram-us"></a>
-            </div>
-            <div class="header-menu">
-                <a href="#" class="sell-link">Разместить свои товары</a>
-                <a href="#" class="menu-link">Доставка</a>
-                <a href="#" class="menu-link">Оплата</a>
-                <a href="#" class="menu-link">О нас</a>
-                <a href="#" class="basket-link">
-                    <span class="counter">25</span>
-                </a>
-            </div>
-        </div>
-        <div class="header-mid d-none d-lg-flex ">
-            <div class="logo-img">
-                <img src="icons/logo.png" class="img-fluid">
-            </div>
-            <div class="user-block">
-                <div class="user-item loc">Склад: Казахстан</div>
-                <div class="user-item account" data-bs-toggle="modal" data-bs-target="#loginModal">Личный кабинет</div>
-                <div class="number-item">
-                    <a href="#" class="tel">+7 701 0 320 320</a>
-                    <a href="#" class="link">Заказать звонок</a>
+    <section>
+        <div class="container">
+            <div class="header-top d-none d-lg-flex">
+                <div class="contact-us">
+                    <a href="#" class="whatsapp-us">Напишите нам</a>
+                    <a href="#" class="instagram-us"></a>
                 </div>
-            </div>
-        </div>
-        <div class="header-under d-none d-lg-flex ">
-            <div class="search-block">
-                <form>
-                    <span class="search-icon"></span>
-                    <input type="text" placeholder="Что вы хотите найти?" class="search-area">
-                    <button class="search-btn">Найти</button>
-                </form>
-            </div>
-            <div class="menu-more catalog">
-                Каталог товаров
-            </div>
-            <div class="menu-more range">
-                Область применения <span>(1632)</span>
-            </div>
-        </div>
-        <div class="header-mobile d-lg-none">
-            <div class="header-mobile-top">
-                <div class="user-item loc">Склад: Казахстан</div>
-                <div class="d-flex align-items-center">
-                    <div class="mobile-search"></div>
-                    <div class="mobile-burger"></div>
-                </div>
-            </div>
-            <div class="d-block d-md-flex align-items-center justify-content-between">
-                <div class="d-flex justify-content-between justify-content-sm-start my-3">
-                    <div class="menu-more catalog">
-                        Каталог
-                    </div>
-                    <div class="menu-more range">
-                        Применение
-                    </div>
-                </div>
-                <div class="d-flex justify-content-between justify-content-sm-start">
-                    <div class="number-item">
-                        <a href="#" class="tel">+7 701 0 320 320</a>
-                        <a href="#" class="link">Заказать звонок</a>
-                    </div>
+                <div class="header-menu">
+                    <a href="#" class="sell-link">Разместить свои товары</a>
+                    <a href="#" class="menu-link">Доставка</a>
+                    <a href="#" class="menu-link">Оплата</a>
+                    <a href="#" class="menu-link">О нас</a>
                     <a href="#" class="basket-link">
                         <span class="counter">25</span>
                     </a>
                 </div>
             </div>
-            <div class="d-flex flex-column flex-sm-row align-items-center justify-content-center justify-content-sm-between">
-                <div class="logo-img my-3">
+            <div class="header-mid d-none d-lg-flex ">
+                <div class="logo-img">
                     <img src="icons/logo.png" class="img-fluid">
                 </div>
-                <div class="">
-                    <a href="#" class="sell-link">Разместить свои товары</a>
+                <div class="user-block">
+                    <div class="user-item loc">Склад: Казахстан</div>
+                    <div class="user-item account" data-bs-toggle="modal" data-bs-target="#loginModal">Личный кабинет</div>
+                    <div class="number-item">
+                        <a href="#" class="tel">+7 701 0 320 320</a>
+                        <a href="#" class="link">Заказать звонок</a>
+                    </div>
+                </div>
+            </div>
+            <div class="header-under d-none d-lg-flex ">
+                <div class="search-block">
+                    <form>
+                        <span class="search-icon"></span>
+                        <input type="text" placeholder="Что вы хотите найти?" class="search-area">
+                        <button class="search-btn">Найти</button>
+                    </form>
+                </div>
+                <div class="header-catalog">
+                    <div class="menu-more catalog">
+                        Каталог товаров
+                    </div>
+                </div>
+                <div class="header-catalog">
+                    <div class="menu-more range">
+                        Область применения <span>(1632)</span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="header-mobile d-lg-none">
+                <div class="header-mobile-top">
+                    <div class="user-item loc">Склад: Казахстан</div>
+                    <div class="d-flex align-items-center">
+                        <div class="mobile-search"></div>
+                        <div class="mobile-burger"></div>
+                    </div>
+                </div>
+                <div class="d-block d-md-flex align-items-center justify-content-between">
+                    <div class="d-flex justify-content-between justify-content-sm-start my-3">
+                        <div class="header-catalog">
+                            <div class="menu-more catalog">
+                                Каталог
+                            </div>
+                        </div>
+                        <div class="header-catalog">
+                            <div class="menu-more range">
+                                Применение
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between justify-content-sm-start">
+                        <div class="number-item">
+                            <a href="#" class="tel">+7 701 0 320 320</a>
+                            <a href="#" class="link">Заказать звонок</a>
+                        </div>
+                        <a href="#" class="basket-link">
+                            <span class="counter">25</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="d-flex flex-column flex-sm-row align-items-center justify-content-center justify-content-sm-between">
+                    <div class="logo-img my-3">
+                        <img src="icons/logo.png" class="img-fluid">
+                    </div>
+                    <div class="">
+                        <a href="#" class="sell-link">Разместить свои товары</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-menu">
+                <div class="mobile-menu__header">
+                    <div class="close-btn">
+                        <img src="icons/close.png" class="img-fluid">
+                    </div>
+                </div>
+                <div class="user-item account" data-bs-toggle="modal" data-bs-target="#loginModal">Личный кабинет</div>
+                <div class="contact-us">
+                    <a href="#" class="whatsapp-us">Напишите нам</a>
+                    <a href="#" class="instagram-us inherit"></a>
+                </div>
+                <div class="mobile-menu__nav">
+                    <a href="#" class="menu-link">Доставка</a>
+                    <a href="#" class="menu-link">Оплата</a>
+                    <a href="#" class="menu-link">О нас</a>
+                </div>
+            </div>
+            <div class="modal-catalog-wrapper">
+                <div class="catalog-popup catalog">
+                    <div class="d-flex flex-column flex-md-row">
+                        <div class="catalog-col me-4">
+                            <ul class="catalog-par">
+                                <li>
+                                    <a href="#" class="catalog-link major">Рулонные материалы <span class="number">(232)</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="catalog-link">Профиль `Товр'<span class="number">(3)</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="catalog-link">Профиль "Шина" <span class="number">(5)</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="catalog-link">Профиль "Швеллер"<span class="number">(5)</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="catalog-link">Уголок неравнополочный<span class="number">(13)</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="catalog-link">Труба квадратная<span class="number">(6)</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="catalog-link">Труба круглая <span class="number">(5)</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="catalog-link">Уголок равнополочный <span class="number">(13)</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="catalog-link">Труба прямоугольная<span class="number">(7)</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="catalog-link">Профиль "Стеновой " <span class="number">(1)</span></a>
+                                </li>
+                            </ul>
+                            <ul class="catalog-par">
+                                <li>
+                                    <a href="#" class="catalog-link major">Рулонные материалы <span class="number">(232)</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="catalog-link">Профиль `Товр'<span class="number">(3)</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="catalog-link">Профиль "Шина" <span class="number">(5)</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="catalog-link">Профиль "Швеллер"<span class="number">(5)</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="catalog-link">Уголок неравнополочный<span class="number">(13)</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="catalog-link">Труба квадратная<span class="number">(6)</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="catalog-col me-4">
+                            <ul class="catalog-par">
+                                <li>
+                                    <a href="#" class="catalog-link major">Рулонные материалы <span class="number">(232)</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="catalog-link">Профиль `Товр'<span class="number">(3)</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="catalog-link">Профиль "Шина" <span class="number">(5)</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="catalog-link">Профиль "Швеллер"<span class="number">(5)</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="catalog-link">Уголок неравнополочный<span class="number">(13)</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="catalog-link">Труба квадратная<span class="number">(6)</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="catalog-link">Труба круглая <span class="number">(5)</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="catalog-link">Уголок равнополочный <span class="number">(13)</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="catalog-link">Труба прямоугольная<span class="number">(7)</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="catalog-link">Профиль "Стеновой " <span class="number">(1)</span></a>
+                                </li>
+                            </ul>
+                            <ul class="catalog-par">
+                                <li>
+                                    <a href="#" class="catalog-link major">Рулонные материалы <span class="number">(232)</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="catalog-link">Профиль `Товр'<span class="number">(3)</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="catalog-link">Профиль "Шина" <span class="number">(5)</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="catalog-link">Профиль "Швеллер"<span class="number">(5)</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="catalog-link">Уголок неравнополочный<span class="number">(13)</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="catalog-link">Труба квадратная<span class="number">(6)</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="catalog-col">
+                            <ul class="catalog-par">
+                                <li>
+                                    <a href="#" class="catalog-link major">Рулонные материалы <span class="number">(232)</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="catalog-link">Профиль `Товр'<span class="number">(3)</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="catalog-link">Профиль "Шина" <span class="number">(5)</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="catalog-link">Профиль "Швеллер"<span class="number">(5)</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="catalog-link">Уголок неравнополочный<span class="number">(13)</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="catalog-link">Труба квадратная<span class="number">(6)</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="catalog-link">Труба круглая <span class="number">(5)</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="catalog-link">Уголок равнополочный <span class="number">(13)</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="catalog-link">Труба прямоугольная<span class="number">(7)</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="catalog-link">Профиль "Стеновой " <span class="number">(1)</span></a>
+                                </li>
+                            </ul>
+                            <ul class="catalog-par">
+                                <li>
+                                    <a href="#" class="catalog-link major">Рулонные материалы <span class="number">(232)</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="catalog-link">Труба квадратная<span class="number">(6)</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="catalog-link">Труба круглая <span class="number">(5)</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="catalog-link">Труба прямоугольная<span class="number">(7)</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="catalog-link">Профиль "Стеновой " <span class="number">(1)</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog-popup range">
+                    <div class="d-flex flex-column flex-md-row">
+                        <div class="catalog-col me-4">
+                            <ul class="catalog-par">
+                                <li>
+                                    <a href="#" class="catalog-link major">Рулонные материалы <span class="number">(232)</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="catalog-link">Профиль `Товр'<span class="number">(3)</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="catalog-link">Профиль "Шина" <span class="number">(5)</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="catalog-link">Профиль "Швеллер"<span class="number">(5)</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="catalog-link">Уголок неравнополочный<span class="number">(13)</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="catalog-link">Труба квадратная<span class="number">(6)</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="catalog-link">Труба круглая <span class="number">(5)</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="catalog-link">Уголок равнополочный <span class="number">(13)</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="catalog-link">Труба прямоугольная<span class="number">(7)</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="catalog-link">Профиль "Стеновой " <span class="number">(1)</span></a>
+                                </li>
+                            </ul>
+                            <ul class="catalog-par">
+                                <li>
+                                    <a href="#" class="catalog-link major">Рулонные материалы <span class="number">(232)</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="catalog-link">Профиль `Товр'<span class="number">(3)</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="catalog-link">Профиль "Шина" <span class="number">(5)</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="catalog-link">Профиль "Швеллер"<span class="number">(5)</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="catalog-link">Уголок неравнополочный<span class="number">(13)</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="catalog-link">Труба квадратная<span class="number">(6)</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="catalog-col">
+                            <ul class="catalog-par">
+                                <li>
+                                    <a href="#" class="catalog-link major">Рулонные материалы <span class="number">(232)</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="catalog-link">Профиль `Товр'<span class="number">(3)</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="catalog-link">Профиль "Шина" <span class="number">(5)</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="catalog-link">Профиль "Швеллер"<span class="number">(5)</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="catalog-link">Уголок неравнополочный<span class="number">(13)</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="catalog-link">Труба квадратная<span class="number">(6)</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="catalog-link">Труба круглая <span class="number">(5)</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="catalog-link">Уголок равнополочный <span class="number">(13)</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="catalog-link">Труба прямоугольная<span class="number">(7)</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="catalog-link">Профиль "Стеновой " <span class="number">(1)</span></a>
+                                </li>
+                            </ul>
+                            <ul class="catalog-par">
+                                <li>
+                                    <a href="#" class="catalog-link major">Рулонные материалы <span class="number">(232)</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="catalog-link">Труба квадратная<span class="number">(6)</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="catalog-link">Труба круглая <span class="number">(5)</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="catalog-link">Труба прямоугольная<span class="number">(7)</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="catalog-link">Профиль "Стеновой " <span class="number">(1)</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="mobile-menu">
-            <div class="mobile-menu__header">
-                <div class="close-btn">
-                    <img src="icons/close.png" class="img-fluid">
-                </div>
-            </div>
-            <div class="user-item account" data-bs-toggle="modal" data-bs-target="#loginModal">Личный кабинет</div>
-            <div class="contact-us">
-                <a href="#" class="whatsapp-us">Напишите нам</a>
-                <a href="#" class="instagram-us inherit"></a>
-            </div>
-            <div class="mobile-menu__nav">
-                <a href="#" class="menu-link">Доставка</a>
-                <a href="#" class="menu-link">Оплата</a>
-                <a href="#" class="menu-link">О нас</a>
-            </div>
-        </div>
-    </div>
-</section>
+    </section>
 </header>
 <main>
     <section>

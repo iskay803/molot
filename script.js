@@ -6,6 +6,27 @@ $(function () {
         $('.mobile-menu, .overlay').fadeOut();
     });
 
+    $('.menu-more.catalog').click(function () {
+        $('.catalog-popup.range').fadeOut();
+        $('.catalog-popup.catalog').fadeIn();
+    });
+
+    $('.menu-more.range').click(function () {
+        $('.catalog-popup.catalog').fadeOut();
+        $('.catalog-popup.range').fadeIn();
+    });
+
+    $('body').click(function (e) {
+        const element = $(e.target);
+        if (element.parents('.catalog-popup').length !== 0) {
+            return;
+        }
+        if (element.is('.menu-more')) {
+            return;
+        }
+        $('.catalog-popup').fadeOut();
+    });
+
     $(window).resize(function () {
         if ($(document).width() > 992) {
             $('.filter-list').collapse('show');
